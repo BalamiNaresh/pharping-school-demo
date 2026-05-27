@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events – Pharping Secondary School</title>
+  <meta name="description" content="School events and photo gallery – sports, cultural, academic, community, and graduation at Pharping Secondary School."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#1a4b8c', dark: '#123569', light: '#2563eb' },
+            accent:  { DEFAULT: '#f59e0b', dark: '#d97706' },
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/custom.css"/>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300">
+    <div class="bg-[#123569] text-white text-xs py-1.5 px-4 flex flex-wrap justify-between items-center gap-y-1">
+      <span>📞 +977-1-4710147 &nbsp;|&nbsp; 9741824242</span>
+      <span>✉️ phsschool2014@gmail.com</span>
+    </div>
+    <nav class="bg-white px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between max-w-7xl mx-auto">
+      <a href="../index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="text-white font-bold font-heading">PSS</span></div>
+        <div>
+          <div class="font-heading font-bold text-primary text-base leading-tight">Pharping Secondary School</div>
+          <div class="text-xs text-gray-500">फर्पिङ माध्यमिक विद्यालय · Est. 1976 B.S.</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-700">
+        <a href="../index.html"   class="navbar-link hover:text-primary">Home</a>
+        <a href="about.html"      class="navbar-link hover:text-primary">About</a>
+        <a href="academics.html"  class="navbar-link hover:text-primary">Academics</a>
+        <a href="admissions.html" class="navbar-link hover:text-primary">Admissions</a>
+        <a href="facilities.html" class="navbar-link hover:text-primary">Facilities</a>
+        <a href="events.html"     class="navbar-link hover:text-primary nav-active">Events</a>
+        <a href="contact.html"    class="navbar-link hover:text-primary">Contact</a>
+        <a href="admissions.html" class="ml-2 bg-accent hover:bg-accent-dark text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors shadow">Apply Now</a>
+      </div>
+      <button id="menu-btn" class="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t px-4 pb-4 shadow-lg">
+      <div class="flex flex-col gap-2 pt-3 text-sm font-medium text-gray-700">
+        <a href="../index.html"   class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-primary">Home</a>
+        <a href="about.html"      class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-primary">About</a>
+        <a href="academics.html"  class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-primary">Academics</a>
+        <a href="admissions.html" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-primary">Admissions</a>
+        <a href="facilities.html" class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-primary">Facilities</a>
+        <a href="events.html"     class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-primary">Events</a>
+        <a href="contact.html"    class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-blue-50 hover:text-primary">Contact</a>
+        <a href="admissions.html" class="mt-2 bg-accent text-white text-center py-2.5 rounded-full font-semibold">Apply Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="pt-[88px] bg-gradient-to-br from-primary to-primary-dark text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2 text-blue-200 text-sm mb-3">
+        <a href="../index.html" class="hover:text-white">Home</a>
+        <span>/</span><span class="text-white">Events</span>
+      </div>
+      <h1 class="font-heading text-4xl lg:text-5xl font-bold mb-3">School Events & Gallery</h1>
+      <p class="text-blue-200 max-w-lg">Browse event categories, view photos with titles, and click any item for full details.</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Categories -->
+    <section id="event-categories-section" class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 reveal">
+          <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Browse by Category</p>
+          <h2 class="font-heading text-3xl font-bold text-primary mb-3">Event Categories</h2>
+          <div class="section-divider mx-auto mb-4"></div>
+          <p class="text-gray-500 max-w-xl mx-auto">Select a category to see all photos and event titles in that group.</p>
+        </div>
+        <div id="event-categories" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Rendered by events.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery (shown after category click) -->
+    <section id="event-gallery" class="hidden py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <button
+          id="gallery-back-btn"
+          type="button"
+          class="inline-flex items-center gap-2 text-primary font-semibold text-sm mb-6 hover:gap-3 transition-all"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          All categories
+        </button>
+        <div class="flex flex-wrap items-end justify-between gap-4 mb-10 reveal">
+          <div>
+            <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-2">Gallery</p>
+            <h2 id="gallery-category-title" class="font-heading text-3xl font-bold text-primary">Category</h2>
+          </div>
+          <p id="gallery-event-count" class="text-gray-500 text-sm">0 events</p>
+        </div>
+        <div id="event-gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Rendered by events.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Event Detail Modal -->
+  <div
+    id="event-modal"
+    class="event-modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+    aria-hidden="true"
+  >
+    <div id="event-modal-backdrop" class="event-modal-backdrop" aria-hidden="true"></div>
+    <div class="event-modal-panel">
+      <button
+        id="event-modal-close"
+        type="button"
+        class="event-modal-close"
+        aria-label="Close event details"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div class="event-modal-image-wrap">
+        <img id="modal-image" src="" alt="" class="w-full h-full object-cover"/>
+      </div>
+      <div class="p-6 sm:p-8">
+        <span id="modal-category" class="inline-block text-xs font-semibold uppercase tracking-wider text-accent bg-amber-50 border border-amber-200 rounded-full px-3 py-1 mb-3"></span>
+        <h2 id="modal-title" class="font-heading text-2xl sm:text-3xl font-bold text-primary mb-4"></h2>
+        <div class="flex flex-wrap gap-4 text-sm text-gray-600 mb-5">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span id="modal-date"></span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span id="modal-location"></span>
+          </div>
+        </div>
+        <p id="modal-description" class="text-gray-600 leading-relaxed"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-wrap justify-between gap-6 text-sm">
+      <div><div class="font-heading font-bold text-white mb-1">Pharping Secondary School</div><p class="text-gray-400">Dakshinkali-06, Pharping, Kathmandu</p></div>
+      <div class="flex flex-wrap gap-6">
+        <a href="../index.html"   class="hover:text-accent transition-colors">Home</a>
+        <a href="about.html"      class="hover:text-accent transition-colors">About</a>
+        <a href="academics.html"  class="hover:text-accent transition-colors">Academics</a>
+        <a href="admissions.html" class="hover:text-accent transition-colors">Admissions</a>
+        <a href="facilities.html" class="hover:text-accent transition-colors">Facilities</a>
+        <a href="events.html"     class="hover:text-accent transition-colors">Events</a>
+        <a href="contact.html"    class="hover:text-accent transition-colors">Contact</a>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 py-4 text-center text-xs text-gray-500">© 2082 B.S. Pharping Secondary School. All rights reserved.</div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/events-data.js"></script>
+  <script src="../js/events.js"></script>
+</body>
+</html>

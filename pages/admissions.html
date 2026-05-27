@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admissions – Pharping Secondary School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#1a4b8c', dark: '#123569', light: '#2563eb' },
+            accent:  { DEFAULT: '#f59e0b', dark: '#d97706' },
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/custom.css"/>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300">
+    <div class="bg-[#123569] text-white text-xs py-1.5 px-4 flex flex-wrap justify-between items-center gap-y-1">
+      <span>📞 +977-1-4710147 &nbsp;|&nbsp; 9741824242</span>
+      <span>✉️ phsschool2014@gmail.com</span>
+    </div>
+    <nav class="bg-white px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between max-w-7xl mx-auto">
+      <a href="../index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="text-white font-bold font-heading">PSS</span></div>
+        <div>
+          <div class="font-heading font-bold text-primary text-base leading-tight">Pharping Secondary School</div>
+          <div class="text-xs text-gray-500">फर्पिङ माध्यमिक विद्यालय · Est. 1976 B.S.</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-700">
+        <a href="../index.html"   class="navbar-link hover:text-primary">Home</a>
+        <a href="about.html"      class="navbar-link hover:text-primary">About</a>
+        <a href="academics.html"  class="navbar-link hover:text-primary">Academics</a>
+        <a href="admissions.html" class="navbar-link hover:text-primary nav-active">Admissions</a>
+        <a href="facilities.html" class="navbar-link hover:text-primary">Facilities</a>
+        <a href="events.html"     class="navbar-link hover:text-primary">Events</a>
+        <a href="contact.html"    class="navbar-link hover:text-primary">Contact</a>
+        <a href="admissions.html" class="ml-2 bg-accent hover:bg-accent-dark text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors shadow">Apply Now</a>
+      </div>
+      <button id="menu-btn" class="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t px-4 pb-4 shadow-lg">
+      <div class="flex flex-col gap-2 pt-3 text-sm">
+        <a href="../index.html"   class="py-2 px-3 rounded-lg hover:bg-blue-50">Home</a>
+        <a href="about.html"      class="py-2 px-3 rounded-lg hover:bg-blue-50">About</a>
+        <a href="academics.html"  class="py-2 px-3 rounded-lg hover:bg-blue-50">Academics</a>
+        <a href="admissions.html" class="py-2 px-3 rounded-lg hover:bg-blue-50">Admissions</a>
+        <a href="facilities.html" class="py-2 px-3 rounded-lg hover:bg-blue-50">Facilities</a>
+        <a href="events.html"     class="py-2 px-3 rounded-lg hover:bg-blue-50">Events</a>
+        <a href="contact.html"    class="py-2 px-3 rounded-lg hover:bg-blue-50">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="pt-[88px] bg-gradient-to-br from-primary to-primary-dark text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2 text-blue-200 text-sm mb-3">
+        <a href="../index.html" class="hover:text-white">Home</a><span>/</span><span class="text-white">Admissions</span>
+      </div>
+      <h1 class="font-heading text-4xl lg:text-5xl font-bold mb-3">Admissions & Fees</h1>
+      <p class="text-blue-200 max-w-lg">Join Nepal's leading Civil Engineering technical stream. Applications open for Batch 2082 B.S.</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Eligibility -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <!-- Eligibility -->
+          <div class="reveal">
+            <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Eligibility</p>
+            <h2 class="font-heading text-3xl font-bold text-primary mb-4">Who Can Apply?</h2>
+            <div class="section-divider mb-6"></div>
+
+            <div class="space-y-4">
+              <div class="flex gap-4 p-5 bg-blue-50 rounded-xl">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800 mb-1">Passed Class 8</h4>
+                  <p class="text-gray-600 text-sm">Must have passed Grade 8 with a minimum <strong>C grade</strong> in each subject.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 p-5 bg-amber-50 rounded-xl">
+                <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800 mb-1">Entrance Examination</h4>
+                  <p class="text-gray-600 text-sm">Must score <strong>50% or above</strong> in the entrance examination conducted by the school.</p>
+                </div>
+              </div>
+              <div class="flex gap-4 p-5 bg-green-50 rounded-xl">
+                <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800 mb-1">Interest in Technical Education</h4>
+                  <p class="text-gray-600 text-sm">Students motivated to pursue civil engineering, construction, or related technical fields.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Required Documents -->
+          <div class="reveal">
+            <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Documents</p>
+            <h2 class="font-heading text-3xl font-bold text-primary mb-4">Required Documents</h2>
+            <div class="section-divider mb-6"></div>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-gray-600 text-sm">
+                <span class="w-6 h-6 bg-primary/10 text-primary rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</span>
+                Grade 8 marksheet (original + copy)
+              </li>
+              <li class="flex items-center gap-3 text-gray-600 text-sm">
+                <span class="w-6 h-6 bg-primary/10 text-primary rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</span>
+                Character certificate from previous school
+              </li>
+              <li class="flex items-center gap-3 text-gray-600 text-sm">
+                <span class="w-6 h-6 bg-primary/10 text-primary rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</span>
+                Transfer certificate
+              </li>
+              <li class="flex items-center gap-3 text-gray-600 text-sm">
+                <span class="w-6 h-6 bg-primary/10 text-primary rounded-full flex items-center justify-center text-xs font-bold shrink-0">4</span>
+                Birth certificate (copy)
+              </li>
+              <li class="flex items-center gap-3 text-gray-600 text-sm">
+                <span class="w-6 h-6 bg-primary/10 text-primary rounded-full flex items-center justify-center text-xs font-bold shrink-0">5</span>
+                Citizenship of parent/guardian (copy)
+              </li>
+              <li class="flex items-center gap-3 text-gray-600 text-sm">
+                <span class="w-6 h-6 bg-primary/10 text-primary rounded-full flex items-center justify-center text-xs font-bold shrink-0">6</span>
+                Recent passport-size photographs (4 copies)
+              </li>
+              <li class="flex items-center gap-3 text-gray-600 text-sm">
+                <span class="w-6 h-6 bg-primary/10 text-primary rounded-full flex items-center justify-center text-xs font-bold shrink-0">7</span>
+                Completed application form (available at school office)
+              </li>
+            </ul>
+            <div class="mt-6 bg-blue-50 rounded-xl p-4 text-sm text-blue-800">
+              <strong>Note:</strong> Contact the school office for exact documents and any updates. Visit us at Dakshinkali-06, Pharping or call <strong>+977-1-4710147</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="py-20 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14 reveal">
+          <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Process</p>
+          <h2 class="font-heading text-4xl font-bold text-primary mb-3">Admission Steps</h2>
+          <div class="section-divider mx-auto"></div>
+        </div>
+        <div class="space-y-4">
+          <div class="relative pl-14 step-line">
+            <div class="absolute left-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold shrink-0">1</div>
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 reveal">
+              <h4 class="font-semibold text-gray-800 mb-1">Visit / Contact School</h4>
+              <p class="text-gray-500 text-sm">Visit us in person or call +977-1-4710147 to express your interest and collect the admission form.</p>
+            </div>
+          </div>
+          <div class="relative pl-14 step-line">
+            <div class="absolute left-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold shrink-0">2</div>
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 reveal">
+              <h4 class="font-semibold text-gray-800 mb-1">Submit Application Form</h4>
+              <p class="text-gray-500 text-sm">Complete and submit the application form with all required documents to the school office.</p>
+            </div>
+          </div>
+          <div class="relative pl-14 step-line">
+            <div class="absolute left-0 w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-bold shrink-0">3</div>
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 reveal">
+              <h4 class="font-semibold text-gray-800 mb-1">Appear in Entrance Exam</h4>
+              <p class="text-gray-500 text-sm">Sit for the school's entrance examination. Minimum 50% score required to qualify.</p>
+            </div>
+          </div>
+          <div class="relative pl-14 step-line">
+            <div class="absolute left-0 w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold shrink-0">4</div>
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 reveal">
+              <h4 class="font-semibold text-gray-800 mb-1">Merit List & Selection</h4>
+              <p class="text-gray-500 text-sm">A merit list is published based on entrance exam scores. Selected students are notified.</p>
+            </div>
+          </div>
+          <div class="relative pl-14">
+            <div class="absolute left-0 w-10 h-10 bg-primary-dark rounded-full flex items-center justify-center text-white font-bold shrink-0">5</div>
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 reveal">
+              <h4 class="font-semibold text-gray-800 mb-1">Fee Payment & Enrollment</h4>
+              <p class="text-gray-500 text-sm">Pay the admission fee, confirm enrollment, collect your schedule, and join the program.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fee Structure -->
+    <section class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14 reveal">
+          <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Fees</p>
+          <h2 class="font-heading text-4xl font-bold text-primary mb-3">Fee Structure</h2>
+          <div class="section-divider mx-auto mb-4"></div>
+          <p class="text-gray-500">Contact the school office for the latest and most accurate fee details.</p>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl shadow-sm border border-gray-200 reveal">
+          <table class="fee-table w-full text-sm">
+            <thead>
+              <tr>
+                <th class="px-6 py-4 text-left">Fee Head</th>
+                <th class="px-6 py-4 text-center">Class 9</th>
+                <th class="px-6 py-4 text-center">Class 10</th>
+                <th class="px-6 py-4 text-center">Class 11</th>
+                <th class="px-6 py-4 text-center">Class 12</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr>
+                <td class="px-6 py-4 font-medium text-gray-800">Admission Fee (one-time)</td>
+                <td class="px-6 py-4 text-center text-gray-600">As applicable</td>
+                <td class="px-6 py-4 text-center text-gray-600">—</td>
+                <td class="px-6 py-4 text-center text-gray-600">As applicable</td>
+                <td class="px-6 py-4 text-center text-gray-600">—</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 font-medium text-gray-800">Monthly Tuition Fee</td>
+                <td class="px-6 py-4 text-center text-gray-600">Contact school</td>
+                <td class="px-6 py-4 text-center text-gray-600">Contact school</td>
+                <td class="px-6 py-4 text-center text-gray-600">Contact school</td>
+                <td class="px-6 py-4 text-center text-gray-600">Contact school</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 font-medium text-gray-800">Practical / Lab Fee</td>
+                <td class="px-6 py-4 text-center text-gray-600">Included</td>
+                <td class="px-6 py-4 text-center text-gray-600">Included</td>
+                <td class="px-6 py-4 text-center text-gray-600">Included</td>
+                <td class="px-6 py-4 text-center text-gray-600">Included</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 font-medium text-gray-800">Examination Fee</td>
+                <td class="px-6 py-4 text-center text-gray-600">As per NEB</td>
+                <td class="px-6 py-4 text-center text-gray-600">As per NEB</td>
+                <td class="px-6 py-4 text-center text-gray-600">As per NEB</td>
+                <td class="px-6 py-4 text-center text-gray-600">As per NEB</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 font-medium text-gray-800">Scholarship / Merit Discount</td>
+                <td class="px-6 py-4 text-center text-green-600 font-semibold">Available</td>
+                <td class="px-6 py-4 text-center text-green-600 font-semibold">Available</td>
+                <td class="px-6 py-4 text-center text-green-600 font-semibold">Available</td>
+                <td class="px-6 py-4 text-center text-green-600 font-semibold">Available</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-center text-gray-400 text-sm mt-4">* Fee amounts are updated annually. Contact the school office for exact figures. Merit scholarships reduce or waive fees for top students.</p>
+
+        <!-- CTA -->
+        <div class="mt-14 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-10 text-center text-white reveal">
+          <h3 class="font-heading text-3xl font-bold mb-3">Ready to Join?</h3>
+          <p class="text-blue-200 mb-6">Visit us or fill out the enquiry form and we'll get back to you within 24 hours.</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="contact.html" class="bg-accent hover:bg-accent-dark text-white font-bold px-7 py-3 rounded-full transition-colors">Send an Enquiry</a>
+            <a href="tel:+97714710147" class="border-2 border-white/40 hover:border-white text-white font-semibold px-7 py-3 rounded-full transition-all">Call Us Now</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Enquiry Form -->
+    <section class="py-20 bg-slate-50" id="enquire">
+      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10 reveal">
+          <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Enquiry</p>
+          <h2 class="font-heading text-3xl font-bold text-primary mb-3">Send an Enquiry</h2>
+          <div class="section-divider mx-auto"></div>
+        </div>
+        <form id="enquiry-form" class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 space-y-5 reveal">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1" for="name">Full Name *</label>
+              <input id="name" name="name" type="text" required placeholder="Your name" class="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1" for="phone">Phone Number *</label>
+              <input id="phone" name="phone" type="tel" required placeholder="98XXXXXXXX" class="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"/>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1" for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" class="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1" for="class">Applying For</label>
+            <select id="class" name="class" class="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary">
+              <option value="">-- Select Grade --</option>
+              <option>Class 9 – Civil Engineering</option>
+              <option>Class 10 – Civil Engineering</option>
+              <option>Class 11 – Civil Engineering</option>
+              <option>Class 12 – Civil Engineering</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1" for="message">Message / Questions</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any questions about admissions, fees, or the program..." class="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3 rounded-xl transition-colors shadow">Submit Enquiry</button>
+          <div id="form-success" class="hidden bg-green-50 border border-green-200 text-green-700 rounded-xl p-4 text-sm text-center">
+            ✅ Thank you! We'll contact you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-wrap justify-between gap-6 text-sm">
+      <div><div class="font-heading font-bold text-white mb-1">Pharping Secondary School</div><p class="text-gray-400">Dakshinkali-06, Pharping, Kathmandu</p></div>
+      <div class="flex gap-6">
+        <a href="../index.html"   class="hover:text-accent transition-colors">Home</a>
+        <a href="about.html"      class="hover:text-accent transition-colors">About</a>
+        <a href="academics.html"  class="hover:text-accent transition-colors">Academics</a>
+        <a href="admissions.html" class="hover:text-accent transition-colors">Admissions</a>
+        <a href="contact.html"    class="hover:text-accent transition-colors">Contact</a>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 py-4 text-center text-xs text-gray-500">© 2082 B.S. Pharping Secondary School. All rights reserved.</div>
+  </footer>
+
+  <a href="#enquire" class="floating-btn bg-accent hover:bg-accent-dark text-white font-semibold px-5 py-3 rounded-full shadow-xl flex items-center gap-2">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+    Apply Now
+  </a>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facilities – Pharping Secondary School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#1a4b8c', dark: '#123569', light: '#2563eb' },
+            accent:  { DEFAULT: '#f59e0b', dark: '#d97706' },
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/custom.css"/>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300">
+    <div class="bg-[#123569] text-white text-xs py-1.5 px-4 flex flex-wrap justify-between items-center gap-y-1">
+      <span>📞 +977-1-4710147 &nbsp;|&nbsp; 9741824242</span>
+      <span>✉️ phsschool2014@gmail.com</span>
+    </div>
+    <nav class="bg-white px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between max-w-7xl mx-auto">
+      <a href="../index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="text-white font-bold font-heading">PSS</span></div>
+        <div>
+          <div class="font-heading font-bold text-primary text-base leading-tight">Pharping Secondary School</div>
+          <div class="text-xs text-gray-500">फर्पिङ माध्यमिक विद्यालय · Est. 1976 B.S.</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-700">
+        <a href="../index.html"   class="navbar-link hover:text-primary">Home</a>
+        <a href="about.html"      class="navbar-link hover:text-primary">About</a>
+        <a href="academics.html"  class="navbar-link hover:text-primary">Academics</a>
+        <a href="admissions.html" class="navbar-link hover:text-primary">Admissions</a>
+        <a href="facilities.html" class="navbar-link hover:text-primary nav-active">Facilities</a>
+        <a href="events.html"     class="navbar-link hover:text-primary">Events</a>
+        <a href="contact.html"    class="navbar-link hover:text-primary">Contact</a>
+        <a href="admissions.html" class="ml-2 bg-accent hover:bg-accent-dark text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors shadow">Apply Now</a>
+      </div>
+      <button id="menu-btn" class="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t px-4 pb-4 shadow-lg">
+      <div class="flex flex-col gap-2 pt-3 text-sm">
+        <a href="../index.html"   class="py-2 px-3 rounded-lg hover:bg-blue-50">Home</a>
+        <a href="about.html"      class="py-2 px-3 rounded-lg hover:bg-blue-50">About</a>
+        <a href="academics.html"  class="py-2 px-3 rounded-lg hover:bg-blue-50">Academics</a>
+        <a href="admissions.html" class="py-2 px-3 rounded-lg hover:bg-blue-50">Admissions</a>
+        <a href="facilities.html" class="py-2 px-3 rounded-lg hover:bg-blue-50">Facilities</a>
+        <a href="events.html"     class="py-2 px-3 rounded-lg hover:bg-blue-50">Events</a>
+        <a href="contact.html"    class="py-2 px-3 rounded-lg hover:bg-blue-50">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="pt-[88px] bg-gradient-to-br from-primary to-primary-dark text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2 text-blue-200 text-sm mb-3">
+        <a href="../index.html" class="hover:text-white">Home</a><span>/</span><span class="text-white">Facilities</span>
+      </div>
+      <h1 class="font-heading text-4xl lg:text-5xl font-bold mb-3">Our Facilities</h1>
+      <p class="text-blue-200 max-w-lg">State-of-the-art civil engineering infrastructure designed for hands-on technical learning.</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Key Facilities Grid -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14 reveal">
+          <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Infrastructure</p>
+          <h2 class="font-heading text-4xl font-bold text-primary mb-3">World-Class Facilities</h2>
+          <div class="section-divider mx-auto mb-4"></div>
+          <p class="text-gray-500 max-w-xl mx-auto">Pharping Secondary School is equipped with modern infrastructure to deliver practical, industry-standard civil engineering education.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+            <div class="h-44 overflow-hidden gallery-img"><img src="../images/prospectus/image12.jpeg" alt="Civil Engineering Lab" class="w-full h-full object-cover"/></div>
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-xl text-gray-800 mb-2">Civil Engineering Lab</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Fully equipped lab for practical sessions including material testing, water supply experiments, and structural model building.</p>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+            <div class="h-44 overflow-hidden gallery-img"><img src="../images/prospectus/image25.jpeg" alt="AutoCAD Computer Lab" class="w-full h-full object-cover"/></div>
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-xl text-gray-800 mb-2">AutoCAD Computer Lab</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Dedicated computer lab with AutoCAD software for civil drawing, land measurement, and design projects.</p>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+            <div class="h-44 overflow-hidden gallery-img"><img src="../images/prospectus/image33.jpeg" alt="Survey Equipment" class="w-full h-full object-cover"/></div>
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-xl text-gray-800 mb-2">Survey Equipment</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Total stations, theodolites, and leveling instruments for engineering survey practicals in and around Pharping.</p>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+            <div class="h-44 overflow-hidden gallery-img"><img src="../images/prospectus/image11.jpeg" alt="Classrooms" class="w-full h-full object-cover"/></div>
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-xl text-gray-800 mb-2">Classrooms</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Spacious, well-ventilated classrooms with teaching aids, whiteboards, and a conducive learning atmosphere.</p>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+            <div class="h-44 overflow-hidden gallery-img"><img src="../images/prospectus/image15.jpeg" alt="Workshop" class="w-full h-full object-cover"/></div>
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-xl text-gray-800 mb-2">Workshop</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Hands-on construction workshop for wiring, plumbing, masonry, and other construction technology practicals.</p>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+            <div class="h-44 overflow-hidden gallery-img"><img src="../images/prospectus/image13.jpeg" alt="Drawing Room" class="w-full h-full object-cover"/></div>
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-xl text-gray-800 mb-2">Drawing Room</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Dedicated drawing room for manual drafting and technical drawing practicals, fundamental to civil engineering training.</p>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+            <div class="h-44 overflow-hidden gallery-img"><img src="../images/prospectus/image22.jpeg" alt="Campus Environment" class="w-full h-full object-cover"/></div>
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-xl text-gray-800 mb-2">Campus Environment</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Located in the heart of historical Pharping Bazaar, next to Panjal Ganesh — serene, safe, and ideal for focused study.</p>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+            <div class="h-44 overflow-hidden gallery-img"><img src="../images/prospectus/image32.jpeg" alt="On-the-Job Training" class="w-full h-full object-cover"/></div>
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-xl text-gray-800 mb-2">On-the-Job Training (OJT)</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Partnerships with local construction companies for real-world OJT placements, giving students industry exposure.</p>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm card-hover reveal">
+            <div class="h-44 overflow-hidden gallery-img"><img src="../images/prospectus/image24.jpeg" alt="Science Lab" class="w-full h-full object-cover"/></div>
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-xl text-gray-800 mb-2">Science Lab</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Fully stocked science laboratory supporting general science subjects alongside the Civil Engineering technical stream.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Infrastructure highlight -->
+    <section class="py-20 bg-gradient-to-br from-primary to-primary-dark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="text-white reveal">
+            <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Technical Education</p>
+            <h2 class="font-heading text-4xl font-bold mb-4">Built for Engineers</h2>
+            <div class="w-14 h-1 bg-accent rounded mb-6"></div>
+            <p class="text-blue-200 leading-relaxed mb-4">
+              Technical education in Civil Engineering at Pharping Secondary School provides real-world skills: land measurement, AutoCAD drawing, wiring, plumbing, and construction supervision.
+            </p>
+            <p class="text-blue-200 leading-relaxed mb-6">
+              These skills generate technical manpower, provide opportunities for self-employment through own firms and companies, and open doors to international education and employment.
+            </p>
+            <a href="admissions.html" class="inline-block bg-accent hover:bg-accent-dark text-white font-semibold px-6 py-3 rounded-full transition-colors">Enrol Today →</a>
+          </div>
+          <div class="grid grid-cols-2 gap-4 reveal">
+            <div class="rounded-2xl overflow-hidden border-2 border-white/20">
+              <img src="../images/prospectus/image26.jpeg" alt="Student presentation" class="w-full h-40 object-cover"/>
+            </div>
+            <div class="rounded-2xl overflow-hidden border-2 border-white/20 mt-6">
+              <img src="../images/prospectus/image33.jpeg" alt="Survey practical" class="w-full h-40 object-cover"/>
+            </div>
+            <div class="rounded-2xl overflow-hidden border-2 border-white/20">
+              <img src="../images/prospectus/image32.jpeg" alt="OJT site visit" class="w-full h-40 object-cover"/>
+            </div>
+            <div class="rounded-2xl overflow-hidden border-2 border-white/20 mt-6">
+              <img src="../images/prospectus/image15.jpeg" alt="Lab practical" class="w-full h-40 object-cover"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-wrap justify-between gap-6 text-sm">
+      <div><div class="font-heading font-bold text-white mb-1">Pharping Secondary School</div><p class="text-gray-400">Dakshinkali-06, Pharping, Kathmandu</p></div>
+      <div class="flex gap-6">
+        <a href="../index.html"   class="hover:text-accent transition-colors">Home</a>
+        <a href="about.html"      class="hover:text-accent transition-colors">About</a>
+        <a href="academics.html"  class="hover:text-accent transition-colors">Academics</a>
+        <a href="admissions.html" class="hover:text-accent transition-colors">Admissions</a>
+        <a href="contact.html"    class="hover:text-accent transition-colors">Contact</a>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 py-4 text-center text-xs text-gray-500">© 2082 B.S. Pharping Secondary School. All rights reserved.</div>
+  </footer>
+
+  <a href="contact.html" class="floating-btn bg-accent hover:bg-accent-dark text-white font-semibold px-5 py-3 rounded-full shadow-xl flex items-center gap-2">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+    Enquire
+  </a>
+  <script src="../js/main.js"></script>
+</body>
+</html>

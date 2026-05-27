@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academics – Pharping Secondary School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#1a4b8c', dark: '#123569', light: '#2563eb' },
+            accent:  { DEFAULT: '#f59e0b', dark: '#d97706' },
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/custom.css"/>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- HEADER (same across all pages) -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300">
+    <div class="bg-[#123569] text-white text-xs py-1.5 px-4 flex flex-wrap justify-between items-center gap-y-1">
+      <span>📞 +977-1-4710147 &nbsp;|&nbsp; 9741824242</span>
+      <span>✉️ phsschool2014@gmail.com</span>
+    </div>
+    <nav class="bg-white px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between max-w-7xl mx-auto">
+      <a href="../index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="text-white font-bold font-heading">PSS</span></div>
+        <div>
+          <div class="font-heading font-bold text-primary text-base leading-tight">Pharping Secondary School</div>
+          <div class="text-xs text-gray-500">फर्पिङ माध्यमिक विद्यालय · Est. 1976 B.S.</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-700">
+        <a href="../index.html"   class="navbar-link hover:text-primary">Home</a>
+        <a href="about.html"      class="navbar-link hover:text-primary">About</a>
+        <a href="academics.html"  class="navbar-link hover:text-primary nav-active">Academics</a>
+        <a href="admissions.html" class="navbar-link hover:text-primary">Admissions</a>
+        <a href="facilities.html" class="navbar-link hover:text-primary">Facilities</a>
+        <a href="events.html"     class="navbar-link hover:text-primary">Events</a>
+        <a href="contact.html"    class="navbar-link hover:text-primary">Contact</a>
+        <a href="admissions.html" class="ml-2 bg-accent hover:bg-accent-dark text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors shadow">Apply Now</a>
+      </div>
+      <button id="menu-btn" class="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t px-4 pb-4 shadow-lg">
+      <div class="flex flex-col gap-2 pt-3 text-sm">
+        <a href="../index.html"   class="py-2 px-3 rounded-lg hover:bg-blue-50">Home</a>
+        <a href="about.html"      class="py-2 px-3 rounded-lg hover:bg-blue-50">About</a>
+        <a href="academics.html"  class="py-2 px-3 rounded-lg hover:bg-blue-50">Academics</a>
+        <a href="admissions.html" class="py-2 px-3 rounded-lg hover:bg-blue-50">Admissions</a>
+        <a href="facilities.html" class="py-2 px-3 rounded-lg hover:bg-blue-50">Facilities</a>
+        <a href="events.html"     class="py-2 px-3 rounded-lg hover:bg-blue-50">Events</a>
+        <a href="contact.html"    class="py-2 px-3 rounded-lg hover:bg-blue-50">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="pt-[88px] bg-gradient-to-br from-primary to-primary-dark text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2 text-blue-200 text-sm mb-3">
+        <a href="../index.html" class="hover:text-white">Home</a><span>/</span><span class="text-white">Academics</span>
+      </div>
+      <h1 class="font-heading text-4xl lg:text-5xl font-bold mb-3">Academics & Curriculum</h1>
+      <p class="text-blue-200 max-w-lg">Civil Engineering (Grade 9–12) — a rigorous, government-approved technical stream combining theory and hands-on practice.</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Program Overview -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14 reveal">
+          <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Program</p>
+          <h2 class="font-heading text-4xl font-bold text-primary mb-3">Civil Engineering (Grade 9–12)</h2>
+          <div class="section-divider mx-auto mb-4"></div>
+          <p class="text-gray-500 max-w-2xl mx-auto">A four-year technical-vocational program providing skills in civil construction, surveying, AutoCAD design, water supply, estimation, and structural engineering — all with 50% practical components.</p>
+        </div>
+
+        <!-- Benefits strip -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+          <div class="bg-blue-50 rounded-xl p-5 text-center reveal">
+            <div class="text-3xl font-bold text-primary font-heading">50%</div>
+            <div class="text-sm text-gray-600 mt-1">Theory</div>
+          </div>
+          <div class="bg-amber-50 rounded-xl p-5 text-center reveal">
+            <div class="text-3xl font-bold text-accent font-heading">50%</div>
+            <div class="text-sm text-gray-600 mt-1">Practical</div>
+          </div>
+          <div class="bg-green-50 rounded-xl p-5 text-center reveal">
+            <div class="text-3xl font-bold text-green-600 font-heading">4</div>
+            <div class="text-sm text-gray-600 mt-1">Years Duration</div>
+          </div>
+          <div class="bg-purple-50 rounded-xl p-5 text-center reveal">
+            <div class="text-3xl font-bold text-purple-600 font-heading">100%</div>
+            <div class="text-sm text-gray-600 mt-1">Board Pass Rate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum by Grade -->
+    <section class="pb-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14 reveal">
+          <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Curriculum</p>
+          <h2 class="font-heading text-4xl font-bold text-primary mb-3">Course Structure by Grade</h2>
+          <div class="section-divider mx-auto mb-4"></div>
+          <p class="text-gray-500">Each grade includes general subjects plus specialized Civil Engineering technical subjects.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+          <!-- Class 9 -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden card-hover reveal">
+            <div class="bg-primary p-5">
+              <h3 class="font-heading text-xl font-bold text-white">Class 9</h3>
+              <p class="text-blue-200 text-sm">Foundation of Civil Engineering</p>
+            </div>
+            <div class="p-6">
+              <div class="mb-4">
+                <div class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">General Subjects</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">English</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Nepali</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Mathematics</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Science</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Social Studies</span>
+                </div>
+              </div>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Technical Subjects</div>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Computer and Drawing</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Water Supply and Sanitary Engineering</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Construction Technology and Workshop</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Water Resource Engineering</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 10 -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden card-hover reveal">
+            <div class="bg-primary-dark p-5">
+              <h3 class="font-heading text-xl font-bold text-white">Class 10</h3>
+              <p class="text-blue-200 text-sm">Advanced Construction & Survey</p>
+            </div>
+            <div class="p-6">
+              <div class="mb-4">
+                <div class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">General Subjects</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">English</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Nepali</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Mathematics</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Science</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Social Studies</span>
+                </div>
+              </div>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Technical Subjects</div>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Construction and Drawing</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Highway Engineering</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Engineering Survey – I</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Estimation, Costing and Supervision – I</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 11 -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden card-hover reveal">
+            <div class="bg-accent p-5">
+              <h3 class="font-heading text-xl font-bold text-white">Class 11</h3>
+              <p class="text-amber-100 text-sm">Geo-technical & Applied Mechanics</p>
+            </div>
+            <div class="p-6">
+              <div class="mb-4">
+                <div class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">General Subjects</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">English</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Nepali</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Mathematics</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Physics</span>
+                </div>
+              </div>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Technical Subjects</div>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Geo-Technical Engineering</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Estimation, Costing and Supervision – II</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Engineering Survey – II</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Applied Mechanics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 12 -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden card-hover reveal">
+            <div class="bg-green-700 p-5">
+              <h3 class="font-heading text-xl font-bold text-white">Class 12</h3>
+              <p class="text-green-100 text-sm">Structures, Fluid & Construction Management</p>
+            </div>
+            <div class="p-6">
+              <div class="mb-4">
+                <div class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">General Subjects</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">English</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Nepali</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Mathematics</span>
+                  <span class="bg-blue-50 text-primary text-xs px-3 py-1 rounded-full">Physics</span>
+                </div>
+              </div>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Technical Subjects</div>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Mechanics of Structure</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Fluid Mechanics</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> RCC Structure</li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600"><span class="text-accent mt-1">●</span> Construction Management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Exposure -->
+    <section class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14 reveal">
+          <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">After Graduation</p>
+          <h2 class="font-heading text-4xl font-bold text-primary mb-3">Career Exposure & Pathways</h2>
+          <div class="section-divider mx-auto mb-4"></div>
+          <p class="text-gray-500 max-w-xl mx-auto">Technical education in Civil Engineering at Pharping opens multiple doors — from Nepal's top universities to international opportunities.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 card-hover reveal">
+            <div class="text-3xl mb-3">🏛️</div>
+            <h3 class="font-semibold text-gray-800 mb-2">B.E. Civil Engineering</h3>
+            <p class="text-gray-500 text-sm">Direct entry to IOE, PU, and other leading engineering colleges in Nepal.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 card-hover reveal">
+            <div class="text-3xl mb-3">🌍</div>
+            <h3 class="font-semibold text-gray-800 mb-2">International Studies</h3>
+            <p class="text-gray-500 text-sm">Graduates have studied at University of Idaho (USA) and Wright State University (USA).</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 card-hover reveal">
+            <div class="text-3xl mb-3">📐</div>
+            <h3 class="font-semibold text-gray-800 mb-2">Land Measurement & AutoCAD</h3>
+            <p class="text-gray-500 text-sm">Immediate employment in surveying, drawing, and design firms after graduation.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 card-hover reveal">
+            <div class="text-3xl mb-3">🔧</div>
+            <h3 class="font-semibold text-gray-800 mb-2">Plumbing & Wiring</h3>
+            <p class="text-gray-500 text-sm">Skilled technical work in construction projects across Nepal and abroad.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 card-hover reveal">
+            <div class="text-3xl mb-3">🏢</div>
+            <h3 class="font-semibold text-gray-800 mb-2">Own Firm / Company</h3>
+            <p class="text-gray-500 text-sm">Technical manpower with skills to start their own engineering firms and companies.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 card-hover reveal">
+            <div class="text-3xl mb-3">🏆</div>
+            <h3 class="font-semibold text-gray-800 mb-2">Full Scholarships</h3>
+            <p class="text-gray-500 text-sm">Top performers win full scholarships to IOE Pulchowk, PU Khowpa, and more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-wrap justify-between gap-6 text-sm">
+      <div><div class="font-heading font-bold text-white mb-1">Pharping Secondary School</div><p class="text-gray-400">Dakshinkali-06, Pharping, Kathmandu</p></div>
+      <div class="flex gap-6">
+        <a href="../index.html"   class="hover:text-accent transition-colors">Home</a>
+        <a href="about.html"      class="hover:text-accent transition-colors">About</a>
+        <a href="academics.html"  class="hover:text-accent transition-colors">Academics</a>
+        <a href="admissions.html" class="hover:text-accent transition-colors">Admissions</a>
+        <a href="contact.html"    class="hover:text-accent transition-colors">Contact</a>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 py-4 text-center text-xs text-gray-500">© 2082 B.S. Pharping Secondary School. All rights reserved.</div>
+  </footer>
+
+  <a href="contact.html" class="floating-btn bg-accent hover:bg-accent-dark text-white font-semibold px-5 py-3 rounded-full shadow-xl flex items-center gap-2">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+    Enquire
+  </a>
+  <script src="../js/main.js"></script>
+</body>
+</html>
