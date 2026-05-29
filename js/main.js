@@ -78,7 +78,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
+
   // ── Page enter animation ──────────────────────────────────────
   document.body.classList.add('page-enter');
 
 });
+  // Course Structure Tabs
+  (function injectTabStyle() {
+    const s = document.createElement('style');
+    s.textContent = '.active-tab{background:#0b1f3a;color:#fff;box-shadow:0 2px 8px rgba(11,31,58,.18);}';
+    document.head.appendChild(s);
+  })();
+
+  const TABS = ['class9','class10','class11','class12'];
+  function switchTab(id) {
+    TABS.forEach(t => {
+      const panel = document.getElementById('tab-' + t);
+      if (panel) panel.classList.toggle('hidden', t !== id);
+      const btn = document.getElementById('btn-' + t);
+      if (!btn) return;
+      if (t === id) {
+        btn.classList.add('active-tab');
+        btn.classList.remove('text-slate-500','hover:text-navy-900');
+      } else {
+        btn.classList.remove('active-tab');
+        btn.classList.add('text-slate-500','hover:text-navy-900');
+      }
+    });
+  }
